@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Tool · ClassroomAI Finder</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1><a href="index.html" style="color:#fff;text-decoration:none">🍊 ClassroomAI Finder</a></h1></header><div class="box" id="t"></div>
+<script src="data/tools.js"></script><script>
+const t=TOOLS.find(x=>x.id==new URLSearchParams(location.search).get("id"));const e=document.getElementById("t");
+e.innerHTML=!t?"Tool not found.":`<h2>${t.name}</h2><p><a href="${t.url}" target="_blank" rel="noopener">${t.url}</a></p>
+<p><b>Tasks:</b> ${t.tasks.join(", ")}</p><p><b>Levels:</b> ${t.levels.join(", ")}</p><p><b>Price:</b> ${t.price}. ${t.free_tier}</p>
+<p><b>LMS:</b> ${t.lms.join(", ")||"None listed"}</p><h3>District approvals</h3>${t.approvals.length?"<ul>"+t.approvals.map(a=>`<li>${a.district}: ${a.note} (<a href="${a.source}">source</a>)</li>`).join("")+"</ul>":"<p>None recorded yet. <a href='index.html#submit'>Submit your district's list</a>.</p>"}
+<p style="font-size:13px;color:#666">Site checked ${t.verification.checked} (HTTP ${t.verification.http}).</p>`;</script></body></html>

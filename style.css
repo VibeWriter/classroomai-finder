@@ -1,0 +1,5 @@
+body{font-family:system-ui,sans-serif;margin:0;background:#fffaf3;color:#222}header{background:#f58220;color:#fff;padding:24px 32px}header h1{margin:0}header p{margin:6px 0 0}
+main{display:grid;grid-template-columns:240px 1fr;gap:24px;padding:24px 32px}aside label{display:block;font-size:14px;margin:2px 0}aside h4{margin:14px 0 4px}
+#q{width:100%;padding:12px;font-size:16px;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:14px}
+.card{background:#fff;border:1px solid #eee;border-radius:10px;padding:14px}.card h3{margin:0 0 6px}.tag{display:inline-block;background:#fdebd7;border-radius:10px;padding:1px 8px;font-size:12px;margin:2px}.ok{background:#d8f3dc}
+a{color:#c25e00}.box{background:#fff;border:1px dashed #f58220;border-radius:10px;padding:16px;margin:24px 32px}input,select,textarea{padding:8px;margin:4px 0}footer{padding:16px 32px;font-size:13px;color:#666}
